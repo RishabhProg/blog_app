@@ -8,7 +8,7 @@ class Sign_up extends StatelessWidget {
     return const  Scaffold(
       body: Center(
 
-        child: Text("Sign up Page", style: TextStyle(fontSize: 35),),
+        child: Text("Sign up Page for users", style: TextStyle(fontSize: 35),),
 
 
         
