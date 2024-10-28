@@ -1,4 +1,5 @@
-import 'package:blogger/sign_up.dart';
+import 'package:blogger/sign_in.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Sign_up(),
+      home: SignInPage(),
     );
   }
 }

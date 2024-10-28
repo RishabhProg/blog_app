@@ -1,7 +1,8 @@
+import 'package:blogger/sign_up.dart';
 import 'package:flutter/material.dart';
 
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({super.key});
+class SignInPage extends StatelessWidget {
+  const SignInPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class SignUpPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Sign up",
+              "Sign In",
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold,color: Colors.purple),
             ),
             const SizedBox(height: 30),
@@ -25,17 +26,9 @@ class SignUpPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            const TextField(
-              decoration: InputDecoration(
-                labelText: 'Password',
-                border: OutlineInputBorder(),
-              ),
-              obscureText: true,
-            ),
-            const SizedBox(height: 16),
              const TextField(
               decoration: InputDecoration(
-                labelText: 'Confirm Password',
+                labelText: 'Password',
                 border: OutlineInputBorder(),
               ),
               obscureText: true,
@@ -51,7 +44,7 @@ class SignUpPage extends StatelessWidget {
                   color: Color.fromRGBO(251, 250, 250, 1),
                 ),
                 label: const Text(
-                  "Sign Up",
+                  "Sign In",
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w300,
@@ -67,8 +60,23 @@ class SignUpPage extends StatelessWidget {
                   ),
                 ),
               ),
-           
-           
+            const SizedBox(height: 16),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SignUpPage()),
+                );
+              },
+              child: const Text(
+                "Don't have an account? Sign Up",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.blue,
+                 
+                ),
+              ),
+            ),
           ],
         ),
       ),
