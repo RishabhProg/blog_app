@@ -1,0 +1,11 @@
+user_id,username,email,password,bio,profile_picture
+1,johndoe,johndoe@example.com,pass1234,"Just a regular guy.",/images/johndoe.jpg
+2,janedoe,janedoe@example.com,pass5678,"Loves hiking and photography.",/images/janedoe.jpg
+3,alicewonder,alice@example.com,passabcd,"Avid reader and writer.",/images/alice.jpg
+4,bobsmith,bobsmith@example.com,passefgh,"Tech enthusiast and gamer.",/images/bobsmith.jpg
+5,carolwhite,carolwhite@example.com,passijkl,"Foodie and travel lover.",/images/carol.jpg
+6,danbrown,danbrown@example.com,passmnop,"Fitness fanatic and coach.",/images/danbrown.jpg
+7,emilygreen,emilygreen@example.com,passqrst,"Passionate about music.",/images/emilygreen.jpg
+8,frankblack,frankblack@example.com,passuvwx,"Lifelong learner and educator.",/images/frankblack.jpg
+9,gracelee,gracelee@example.com,passyz12,"Art lover and curator.",/images/gracelee.jpg
+10,harrypotter,harrypotter@example.com,pass3456,"Wizarding world enthusiast.",/images/harrypotter.jpg
