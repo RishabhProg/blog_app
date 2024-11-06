@@ -69,6 +69,7 @@ class _PostState extends State<Post> {
     });
 
     http.StreamedResponse response = await request.send();
+    print(widget.token);
 
     if (response.statusCode == 200) {
       print("ok");
@@ -121,15 +122,15 @@ class _PostState extends State<Post> {
                   return null;
                 },
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               TextFormField(
                 controller: _descriptionController,
                 decoration: const InputDecoration(
                   labelText: "Description",
                   border: OutlineInputBorder(),
                 ),
-                style:
-                    TextStyle(color: const Color.fromARGB(255, 207, 199, 199)),
+                style: const TextStyle(
+                    color: const Color.fromARGB(255, 207, 199, 199)),
                 maxLines: null,
                 keyboardType: TextInputType.multiline,
                 validator: (value) {
@@ -141,10 +142,13 @@ class _PostState extends State<Post> {
               ),
               TextField(
                 controller: _categoryController,
-                decoration: InputDecoration(labelText: 'Add Category'),
+                decoration: const InputDecoration(
+                  labelText: 'Add Category',
+                ),
+                style: const TextStyle(color: Colors.white),
                 onSubmitted: (_) => _addCategory(),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Wrap(
                 spacing: 8.0,
                 children: categories.map((category) {

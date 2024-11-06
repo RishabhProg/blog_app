@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.black,
         centerTitle: true,
         title: Padding(
-          padding: EdgeInsets.only(top: 8.0), // Adjust top padding as needed
+          padding: EdgeInsets.only(top: 8.0), 
           child: Text(
             "Hello, ${widget.userName}",
             style: TextStyle(color: Colors.white),
@@ -75,9 +75,10 @@ class _HomeState extends State<Home> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Hello ${widget.id}",
-                  style: const TextStyle(color: Colors.white),
+                const Text(
+                  // "Hello ${widget.id}",
+                  "welcome!",
+                  style:  TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(height: 30),
                 ElevatedButton(
@@ -95,12 +96,12 @@ class _HomeState extends State<Home> {
             right: 20,
             child: Container(
               decoration: const BoxDecoration(
-                color: Color.fromRGBO(35, 34, 34, 1), // Background color
-                shape: BoxShape.circle, // Makes the background circular
+                color: Color.fromRGBO(35, 34, 34, 1), 
+                shape: BoxShape.circle, 
               ),
               child: IconButton(
                 onPressed: () {
-                  // Your onPressed action
+                  
                   Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -114,10 +115,10 @@ class _HomeState extends State<Home> {
                 },
                 icon: const Icon(
                   Icons.create,
-                  color: Colors.purple, // Icon color
+                  color: Colors.purple, 
                 ),
-                iconSize: 24.0, // Icon size
-                tooltip: 'Edit', // Tooltip
+                iconSize: 24.0, 
+                tooltip: 'Edit', 
               ),
             ),
           ),

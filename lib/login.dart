@@ -114,8 +114,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 
         
                  SizedBox(
-          width: 100,  // Set your desired width
-          height: 100, // Set your desired height
+          width: 100,  
+          height: 100, 
           child: LottieBuilder.asset(
             "assets/login.json",
             repeat: true,
